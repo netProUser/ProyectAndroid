@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = findViewById(R.id.btn_ingresar);
             button.setOnClickListener(v -> {
-                Toast.makeText(this,"Ingrese las credenciales",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getString(R.string.mensajeAdvertencia),Toast.LENGTH_LONG).show();
             });
     }
 }

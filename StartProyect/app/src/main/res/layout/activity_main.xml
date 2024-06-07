@@ -21,7 +21,7 @@
         android:textColor="@color/black"
         android:padding="16dp"
         android:layout_marginStart="30dp"
-        android:text="Usuario:"/>
+        android:text="@string/usuario"/>
 
     <EditText
         android:id="@+id/txt_usuario"
@@ -39,7 +39,7 @@
         android:textColor="@color/black"
         android:padding="16dp"
         android:layout_marginStart="30dp"
-        android:text="Contraseña:"/>
+        android:text="@string/contraseña"/>
 
     <EditText
         android:id="@+id/txt_clave"
@@ -57,7 +57,7 @@
         android:layout_marginStart="110dp"
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
-        android:text="Ingresar"
+        android:text="@string/ingresar"
         android:textSize="17sp"
         app:backgroundTint="#1F54D8" />
 
