@@ -7,15 +7,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.practico.startproyect.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        Button button = findViewById(R.id.btn_ingresar);
-            button.setOnClickListener(v -> {
+        //Button button = findViewById(R.id.btn_ingresar);
+            binding.btnIngresar.setOnClickListener(v -> {
                 Toast.makeText(this,getString(R.string.mensajeAdvertencia),Toast.LENGTH_LONG).show();
             });
     }
