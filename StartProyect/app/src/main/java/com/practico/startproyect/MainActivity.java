@@ -12,11 +12,17 @@ import com.practico.startproyect.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final  String CREDENCIALES_KEY = "credenciales";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Bundle extras = getIntent().getExtras();
+        CredencialesEntity credenciales = extras.getParcelable(CREDENCIALES_KEY);
+        binding.txtUsuario1.setText(credenciales.getUsuario());
+        binding.txtClave1.setText(credenciales.getClave());
 
         //Button button = findViewById(R.id.btn_ingresar);
             binding.btnIngresar.setOnClickListener(v -> {

@@ -27,7 +27,10 @@ public class Pagina1 extends AppCompatActivity {
 
     private void openPrimeraPagina(String v_usuario,String v_clave) {
         CredencialesEntity credenciales = new CredencialesEntity(v_usuario,v_clave);
-        Intent intent = new Intent(this,MainActivity.class);
+        //Intent intent = new Intent(this,MainActivity.class);
+        //intent.putExtra(MainActivity.CREDENCIALES_KEY,credenciales);
+        //startActivity(intent);
+        Intent intent = new Intent(this,MainFotos.class);
         startActivity(intent);
     }
 }

@@ -30,7 +30,7 @@
             android:text="@string/usuario" />
 
         <EditText
-            android:id="@+id/txt_usuario"
+            android:id="@+id/txt_usuario1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -48,7 +48,7 @@
             android:text="@string/contraseña" />
 
         <EditText
-            android:id="@+id/txt_clave"
+            android:id="@+id/txt_clave1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
