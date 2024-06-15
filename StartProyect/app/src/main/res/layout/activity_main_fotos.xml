@@ -29,11 +29,12 @@
             android:id="@+id/imageButton"
             app:srcCompat="@drawable/tibu1"
             android:padding="16dp"
+            android:scaleType="centerCrop"
             tools:layout_editor_absoluteX="103dp"
             tools:layout_editor_absoluteY="278dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_tocar"
             android:layout_width="144dp"
             android:layout_height="51dp"
             android:text="Tocar Aqui"
